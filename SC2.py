@@ -20,6 +20,7 @@
 Height=int(input("height in feet and inches"))
 Weight=int(input("weight in pounds "))
 bmi= Weight/ (Height**2)*703
+print(bmi)
 if bmi <18.5:
     print("you are underweight")
 elif 18.5 <= bmi <= 24.9:
@@ -30,4 +31,4 @@ else :
     print("you are obese")
 
 
-print(bmi)
+
