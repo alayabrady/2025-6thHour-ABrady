@@ -21,6 +21,9 @@ elif a == b:
 #5. Make an if statement that prints if variable B is between 3 and 7, or not.
 if b > 3 < 7:
     print("yes")
+
+else b < 3 < 7 : 
+    print("no")
 #6. Make an if statement that prints if variable C is even or odd.
 if c % 2 == 0:
     print(c, "is even")
