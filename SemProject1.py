@@ -86,6 +86,30 @@ while player["HP"] >0 and enemy["HP"] > 0:
             print("Mindflayer misses")
             attacker = player
 
+    if attacker == player:
+        roll = random.randint(1,20)
+        print("Mindflayer's Roll :" , roll)
+
+        if roll == 1:
+            print("You suck. Automatic Miss.")
+            attacker = enemy
+        else: hit_value = roll+player["AtkMod"]
+
+        if roll == 20:
+            print("wow youre amzing good job automatic hit")
+            dmg = player["Damage"]*2
+            enemy["HP"] -= dmg
+            print("LaeZel Damage:" , dmg)
+            attacker = enemy
+        elif hit_value >= enemy["AC"]:
+            dmg = player["Damage"]
+            enemy["HP"] -= dmg
+            print("LaeZel Damage:" , dmg)
+            attacker = enemy
+        else:
+            print("LaeZel misses")
+            attacker = enemy
+
 
 
 
