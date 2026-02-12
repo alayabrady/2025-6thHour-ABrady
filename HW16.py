@@ -25,10 +25,7 @@ def loop(water):
     for i in range (1,water+ 1):
         print(i)
 #5. Call all of the functions created in 1 - 4 with relevant arguments.
-hello_world()
-addition(a=15, b=20 , c=32)
-animal_list("orca","hammerhead shark","whale","sealion","seahorse")
-loop(10)
+
 #6. Create a variable x that has the value of 2. Print x
 x=2
 print(x)
